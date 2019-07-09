@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:auto;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+nav,footer{
+    background-color: darkgray;
+    padding: 1.5%;
+}
+
+nav {
+    position: fixed;
+    left: 0;      /*these settings ensure the nave bar sticks to the top , right, and left side of body*/
+    right: 0;
+    top: 0;
+    z-index: 10;  /*z-index places the navbar at the top of the stacking order*/
+    /*appears to inscrease height even with border box because no height is set*/
+    
+}
+header{
+    background-color: grey;
+    padding: 12%;
+}
+
+#wrapper{
+    padding: 2%;
+    background-color: lightgrey;
+}
+
+#wrapper2{
+    padding: 2%;
+    background-color: grey;
+}
+
+#wrapper3{
+    padding: 2%;
+    background-color: lightgrey;
+}
+
+#wrapper4{
+    padding: 2%;
+    background-color: grey;
+}
+#wrapper5{
+    padding: 2%;
+    background-color: lightgrey;
+}
+section{
+    background-color: darkgrey;
+    padding: 5%
+}
