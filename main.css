@@ -366,7 +366,7 @@ header::after {
     position: relative;
     background: transparent;
     float: right;
-    clip-path: initial;
+    clip-path: none;
   }
   .site-nav li {
     display: inline-block;
