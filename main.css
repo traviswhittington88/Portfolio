@@ -48,7 +48,7 @@ a .live {
   width: 90%;
 }
 
-.container,.footer {
+.container {
   width: 95%;
   max-width: 1680px;
   margin: 0 auto;
@@ -100,7 +100,7 @@ header {
 }
 
 .footer {
-  width: 95%;
+  width: 100%;
   text-align: center;
   background-color: coral;
   padding: 1em 0;
