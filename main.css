@@ -142,7 +142,7 @@ header::after {
     top: 100%;   /*must use percent!*/
     right: 0%;
     /*height: 0px;*/
-    /*overflow: hidden;*/
+    overflow: hidden;
     clip-path: circle(0px at top right);
     transition: all ease-in-out 1000ms;
 }
