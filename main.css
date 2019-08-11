@@ -142,12 +142,14 @@ header::after {
     top: 100%;   /*must use percent!*/
     right: 0%;
     /*height: 0px;*/
-    overflow: hidden;
+    -webkit-clip-path: circle(0px at top right);
     clip-path: circle(0px at top right);
+    -webkit-transition: all ease-in-out 1000ms;
     transition: all ease-in-out 1000ms;
 }
 .site-nav--open {
     /*height: auto;*/
+  -webkit-clip-path: circle(150% at top right);
   clip-path: circle(150% at top right);
 }
 
@@ -366,7 +368,8 @@ header::after {
     position: relative;
     background: transparent;
     float: right;
-    clip-path: none;
+    -webkit-clip-path: initial;
+    clip-path: initial;
   }
   .site-nav li {
     display: inline-block;
