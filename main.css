@@ -44,6 +44,9 @@ a .live {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
   width: 90%;
 }
@@ -227,6 +230,22 @@ header::after {
 .open .hamburger::after {
   transform: translateY(-2.8px) rotate(-90deg);
     
+  }
+
+  .techContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    
+  }
+
+  .techWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
 
