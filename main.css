@@ -1,59 +1,170 @@
-*{
+* {
     box-sizing: border-box;
+  
 }
 
-body{
-    margin:auto;
-    border: 1px solid black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.6;
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+body {
+  background: #F0F8EA;
+  font-family: 'Quicksand', sans-serif;
 }
 
-nav,footer{
-    background-color: darkgray;
-    padding: 1.5%;
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-nav {
-    position: fixed;
-    left: 0;      /*these settings ensure the nave bar sticks to the top , right, and left side of body*/
-    right: 0;
-    top: 0;
-    z-index: 10;  /*z-index places the navbar at the top of the stacking order*/
-    /*appears to inscrease height even with border box because no height is set*/
+header {
+  background: coral;
+  color: #EBEBD3;
+  padding: 1em 0;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.logo {
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .logo span {
+    font-weight: 400;
+  }
+  
+.site-nav { 
+    position: absolute;
+    background-color: #464655;
+    top: 100%;   /*must use percent!*/
+    right: 0%;
+    /*height: 0px;*/
+    /*overflow: hidden;*/
+    clip-path: circle(0px at top right);
+    transition: all ease-in-out 1000ms;
+}
+.site-nav--open {
+    /*height: auto;*/
+  clip-path: circle(150% at top right);
+}
+
+.site-nav ul {
+    margin: 0;
+    padding:0;
+    list-style:none;
+}
+.site-nav li {
+    border-bottom: 1px solid #575766;
+}
+
+.site-nav li:last-child{
+    border-bottom: none;
+}
+
+.site-nav a{
+    color: #ebebd3;
+    text-decoration: none;
+    display: block;
+    padding: 2em 4em 2em 1.5em;
+    text-transform: uppercase;
+}
+
+.site-nav a:hover,
+.site-nav a:focus{
+    background-color: #e4b363;
+    color: #464655;
+}
+.site-nav i {
+    display: inline-block; /*allows to set a width*/
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255,255,255,.4);
+  }
+.menu-toggle{
+    padding: 1em;
+    position:absolute;
+    right: .1em;
+    top: .1em;
+    cursor: pointer;
+}
+
+.hamburger,.hamburger::before,.hamburger::after{
+    content:'';
+    display:block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+
+.hamburger::before{
+  transform:translateY(-6px);
+}
+
+.hamburger::after{
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+  
+.open .hamburger::before {
+  opacity: 0;
+}
+  
+.open .hamburger::after {
+  transform: translateY(-2.8px) rotate(-90deg);
     
-}
-header{
-    background-color: grey;
-    padding: 12%;
+  }
+  
+@media (min-width: 700px) {
+  .menu-toggle {
+    display: none;
+  }
+  .site-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    clip-path: initial;
+  }
+  .site-nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .site-nav a {
+    padding: 0;
+    margin-left: 3em;
+  }
+  .site-nav i {
+    display: none;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+
+
+
 }
 
-#wrapper{
-    padding: 2%;
-    background-color: lightgrey;
-}
 
-#wrapper2{
-    padding: 2%;
-    background-color: grey;
-}
 
-#wrapper3{
-    padding: 2%;
-    background-color: lightgrey;
-}
 
-#wrapper4{
-    padding: 2%;
-    background-color: grey;
-}
-#wrapper5{
-    padding: 2%;
-    background-color: lightgrey;
-}
-section{
-    background-color: darkgrey;
-    padding: 5%
-}
+
+

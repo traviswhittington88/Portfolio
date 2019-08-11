@@ -2,30 +2,63 @@
 <html>
 <head><title>My Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main.css"
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+<header>
+<div class="container">
+  <h1 class="logo">My<span>Portfolio</span></h1>
+  <nav role="navigation" class="site-nav">
+    <ul>
+      <li><a href=""><i class="fa fa-home"></i>Home</a></li>
+      <li><a href=""><i class="fa fa-info"></i>Bio</a></li>
+      <li><a href=""><i class="fa fa-pencil"></i>Blog</a></li>
+      <li><a href=""><i class="fa fa-briefcase"></i>Projects</a></li>
+      <li><a href=""><i class="fa fa-envelope"></i>Contact</a></li>
+     </ul>
+   </nav>
+   <div class="menu-toggle">
+     <div class="hamburger"></div>
+   </div>
+</div>
+</header>
 <body>
-    <nav>Nav</nav>
-    <main>
-        <header role="banner">
-            <h1>Hero</h1>
-        </header>
-        <div id="wrapper">
-            <section>Headline</section>
-        </div>
-        <div id="wrapper2">
-            <section>Bio</section>
-        </div>
-        <div id="wrapper3">
-            <section>Project1</section>
-        </div>
-        <div id="wrapper4">
-            <section>Project2</section>
-        </div>
-        <div id="wrapper5">
-                <section>Project3</section>
-        </div>
-        <div class="footer">
-            <footer>Contact Information</footer>
-        </div>
+<main role="main" id="home">
+  <h1>Hi, my name is <span style="color: coral;">Travis!</span></h1>
+  <div id="hero-container">
+    <div id="hero-image"></div>
+  </div>
+  <div class="container" id="headline">
+    <p>I’m a <span style="color: teal">creative</span> and <span style="color: rgb(0, 119, 255)">passionate </span>full stack developer with an enthusiasm for
+    using code to better the lives of everyone around me! </p>
+  </div>
+  <div class="container" id="bio">
+    <section><p>Bio</p>
+      <p>I am a web developer and recent graduate of Thinkful’s Full Stack Web Development program.  To say I love coding is an understatement. <b><em>I have a drive and passion that are unmatched when it comes to solving problems through logic and technology.</em></b>  I developed this passion early on in my military career as a <span style="color: coral"><b>Pashto</b></span> (Afhgan) linguist where I thrived at interpreting languages other than my own.  It only makes sense that I would find the field of full stack development so satisfying and rewarding. Not only that, I love people and building solutions to our everyday problems. As a developer and keen listener, <b><em>the idea of transforming problems into solutions is a process that truly resonates with me.</em></b></p>
+      <p>My life outside of coding is also extremely fulfilling. When I’m not at my desk, I’m usually chasing my 3 children around! I have a very supportive wife who has supported me through this journey and it would be difficult to say she hasn’t been a large part of my success.  Being a young father doesn’t guarantee a lot of free time. However, if there is a spare moment I will be playing guitar, writing music, reading books, or trying to increase my knowledge about the world around me.<span style="color:rgb(0, 119, 255)"> To put it simply, I love to learn!</span>"</p>
+      <p><b><em>My favorite aspect of full-stack development is using Javascript and its various frameworks to create the actual functionality behind each project or application.</em></b>  Sure, I enjoy styling and semantic HTML like the rest of them, but when it comes to truly realizing the intent of a design, Javascript can be super fun! With that said, I also dedicate a lot of thought into styling my apps and making them look just right. I will spend hours of personal time altering fonts or layouts and then experimenting by showing potential users the various designs and gathering their feedback and opinions.</p>
+    </section>
+  </div>
+  <div class="container" id="portfolio">
+    <section>
+      <h4>Without further ado, here are my projects!</h4>
+      <div class="img-container">
+        <div id="quiz-img"></div>
+      </div>
+        <p>Rock N' Roll Quiz App</p>
+        <p>This application presents the user with 10 rock trivia questions. It provides feedback for each question (right or wrong), increments the question number and score accordingly, and then displays the overall results. The visual design of the application is based around bright, eye-catching colors with notable music legends Jimi Hendrix and Eric Clapton. The fonts are large and easy to read in contrast to the colorful background. The idea for this app is to keep it simple and make the controls as user friendly as possible</p><a class="linkcolorA" target="_blank" href="https://github.com/traviswhittington88/Quiz-App">Github</a>
+        <a class="linkcolorB" target="_blank" href="https://traviswhittington88.github.io/Quiz-App/">Live Page</a>
+  </div>
+ 
+ 
+  <div class="footer">
+    <footer id="contact">
+      <address>
+        <a href="mailto:traviswhittington@ymail.com">Email</a> |
+        <a href="https://www.linkedin.com/in/travis-whittington-83b96ba8/" id="linkedin">Linkedin</a>
+      <address>
+  </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
 </html>
