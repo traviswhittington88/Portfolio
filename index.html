@@ -7,16 +7,16 @@
     <script src="https://kit.fontawesome.com/b70fed9712.js"></script>
 </head>
 
-<header>
+<header id="home">
 <div class="container">
   <h1 class="logo">My<span style=>Portfolio</span></h1>
   <nav role="navigation" class="site-nav">
     <ul>
-      <li><a href=""><i class="fa fa-home"></i>Home</a></li>
-      <li><a href=""><i class="fa fa-info"></i>Bio</a></li>
-      <li><a href=""><i class="fa fa-pencil"></i>Blog</a></li>
-      <li><a href=""><i class="fa fa-briefcase"></i>Projects</a></li>
-      <li><a href=""><i class="fa fa-envelope"></i>Contact</a></li>
+      <li><a href="#home" data-page="home"><i class="fa fa-home"></i>Home</a></li>
+      <li><a href="#bio" data-page="bio"><i class="fa fa-info"></i>Bio</a></li>
+      <li><a href="#blog"data-page="blog"><i class="fa fa-pencil"></i>Blog</a></li>
+      <li><a href="#projects"data-page="projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+      <li><a href="#contact"data-page="contact"><i class="fa fa-envelope"></i>Contact</a></li>
      </ul>
    </nav>
    <div class="menu-toggle">
@@ -25,7 +25,7 @@
 </div>
 </header>
 <body>
-<main role="main" id="home">
+<main role="main">
 <h1>Hi, my name is <span style="color: coral;">Travis!</span></h1>
 <div class="wrapper">
   <div class=" img-container hero-img--container">
@@ -65,7 +65,7 @@
     </section>
   </div>
 
-  <div id="portfolio">
+  <div id="projects">
     <section>
     <h3><span style="color: blue" >PROJECTS</span></h3>
       <div class="img-container quizAppImg">
@@ -105,7 +105,7 @@
     </div>
     
 </main>
-<div class="footer">
+<div class="footer" id="contact">
     <footer id="contact">
       <address>
         <a href="mailto:traviswhittington@ymail.com">Email | </a>
@@ -113,12 +113,12 @@
       <address>
     </footer>
   </div>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
 
-  <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+
 </html>
