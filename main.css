@@ -70,6 +70,8 @@ section {
   display: flex;
 }
 
+
+
 .img-container {
   margin: 0 auto;
   width: 95%;
@@ -109,6 +111,7 @@ header {
   padding: 1em 0;
   position: relative;
   height: 50px;
+  margin-top: 30px;
 }
 
 .footer a {
@@ -237,8 +240,6 @@ header::after {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    width: auto;
-    height: auto;
     
   }
 
@@ -248,6 +249,10 @@ header::after {
     justify-content: center;
   }
 
+  .techWrapper i {
+    padding: 3px;
+    margin-bottom: 10px;
+  }
 
   /*for sizing images*/
 @media (min-width: 450px) {  
@@ -260,9 +265,7 @@ header::after {
   } 
 @media (min-width: 550px) { 
   .img-container {
-    width: 95%;
     height: 14%;
-    border: solid grey;
   }
   .img-container.hero-img--container {
     height: 500px;
@@ -271,7 +274,6 @@ header::after {
 
 @media (min-width: 600px) { 
   .img-container {
-    width: 95%;
     height: 16%;
     border: solid grey;
   }
@@ -282,8 +284,7 @@ header::after {
 
 @media (min-width: 650px) { 
   .img-container {
-    width: 95%;
-    height: 33%;
+    height: 18%;
     border: solid grey;
   }
   .img-container.hero-img--container {
@@ -293,8 +294,7 @@ header::after {
 
 @media (min-width: 700px) { 
   .img-container {
-    width: 95%;
-    height: 36%;
+    height: 20%;
     border: solid grey;
   }
   .img-container.hero-img--container {
@@ -304,8 +304,7 @@ header::after {
 
 @media (min-width: 750px) { 
   .img-container {
-    width: 95%;
-    height: 39%;
+    height: 22%;
     border: solid grey;
   }
   .img-container.hero-img--container {
@@ -315,8 +314,7 @@ header::after {
 
 @media (min-width: 800px) { 
   .img-container {
-    width: 95%;
-    height: 41%;
+    height: 24%;
     border: solid grey;
   }
   .img-container.hero-img--container {
@@ -326,8 +324,7 @@ header::after {
 
 @media (min-width: 850px) { 
   .img-container {
-    width: 95%;
-    height: 43%;
+    height: 24%;
     border: solid grey;
   }
   .img-container.hero-img--container {
@@ -337,8 +334,7 @@ header::after {
 
 @media (min-width: 900px) { 
   .img-container {
-    width: 95%;
-    height: 44%;
+    height: 28%;
     border: solid grey;
   }
   .img-container.hero-img--container {
@@ -348,8 +344,7 @@ header::after {
 
 @media (min-width: 950px) { 
   .img-container {
-    width: 95%;
-    height: 45%;
+    height: 30%;
     border: solid grey;
   }
   .img-container.hero-img--container {
@@ -359,7 +354,7 @@ header::after {
 
 @media (min-width: 1000px) { 
   .img-container {
-    height: 46%;
+    height: 32%;
     border: solid grey;
   }
   .img-container.hero-img--container {
@@ -369,8 +364,7 @@ header::after {
 
 @media (min-width: 1050px) { 
   .img-container {
-    width: 95%;
-    height: 47%;
+    height: 36%;
     border: solid grey;
   }
   .img-container.hero-img--container {

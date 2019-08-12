@@ -7,24 +7,24 @@
     <script src="https://kit.fontawesome.com/b70fed9712.js"></script>
 </head>
 
-<header id="home">
-<div class="container">
-  <h1 class="logo">My<span style=>Portfolio</span></h1>
-  <nav role="navigation" class="site-nav">
-    <ul>
-      <li><a href="#home" data-page="home"><i class="fa fa-home"></i>Home</a></li>
-      <li><a href="#bio" data-page="bio"><i class="fa fa-info"></i>Bio</a></li>
-      <li><a href="#blog"data-page="blog"><i class="fa fa-pencil"></i>Blog</a></li>
-      <li><a href="#projects"data-page="projects"><i class="fa fa-briefcase"></i>Projects</a></li>
-      <li><a href="#contact"data-page="contact"><i class="fa fa-envelope"></i>Contact</a></li>
-     </ul>
-   </nav>
-   <div class="menu-toggle">
-     <div class="hamburger"></div>
-   </div>
-</div>
-</header>
 <body>
+    <header id="home">
+        <div class="container">
+          <h1 class="logo">MyPortfolio</h1>
+          <nav role="navigation" class="site-nav">
+            <ul>
+              <li><a href="#home" data-page="home"><i class="fa fa-home"></i>Home</a></li>
+              <li><a href="#bio" data-page="bio"><i class="fa fa-info"></i>Bio</a></li>
+              <li><a href="#blog" data-page="blog"><i class="fa fa-pencil"></i>Blog</a></li>
+              <li><a href="#projects" data-page="projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+              <li><a href="#contact" data-page="contact"><i class="fa fa-envelope"></i>Contact</a></li>
+             </ul>
+           </nav>
+           <div class="menu-toggle">
+             <div class="hamburger"></div>
+           </div>
+        </div>
+      </header>
 <main role="main">
 <h1>Hi, my name is <span style="color: coral;">Travis!</span></h1>
 <div class="wrapper">
@@ -33,17 +33,17 @@
   </div>
 
   <div class="headline"><p>I’m a <span style="color: teal">creative</span> and 
-    <span style="color: rgb(0, 119, 255)">passionate </span>full stack developer with an enthusiasm for
+    <span style="color: coral">passionate </span>full stack developer with an enthusiasm for
     using code to better the lives of everyone around me! </p>
   </div>
     
   <div id="bio">
     <section>
-      <h3><span style="color:teal">BIO</span></h3>
+      <h3>BIO</h3>
       <p> I am a web developer and recent graduate of Thinkful’s Full Stack Web Development program.  To say I love coding
         is an understatement. <b><em>I have a drive and passion that are unmatched when it comes to solving problems 
-        through logic and technology.</em></b>  I developed this passion early on in my military career as a 
-        <span style="color: coral"><b>Pashto</b></span> linguist where I thrived interpreting the official language
+        through logic and technology.</em></b>  I developed this passion early on in my military career as a Pashto
+        linguist where I thrived interpreting the official language of
         Afghanistan. It only makes sense that I would find the field of full stack development so satisfying and rewarding. 
         Not only that, I love people and building solutions to those human problems that occassionaly crop up, especially
         using communication as a tool to strengthem teams and friendship. As a developer and keen listener, 
@@ -53,8 +53,8 @@
         children around! I have a very supportive wife who has supported me through this journey and it would be difficult 
         to say she hasn’t been a large part of my success.  Being a young father doesn’t guarantee a lot of free time. 
         However, if there is a spare moment I will be playing guitar, writing music, reading books, or trying to increase 
-        my knowledge about the world around me.<span style="color:rgb(0, 119, 255)"> To put it simply, I love to 
-        learn!</span>"</p>
+        my knowledge about the world around me. <em>To put it simply, I love to 
+        learn!</em></p>
 
       <p><b><em>  My favorite aspect of full-stack development is using Javascript and its various frameworks to create the 
         actual functionality behind each project or application.</em></b>  Sure, I enjoy styling and semantic HTML like the 
@@ -66,8 +66,8 @@
   </div>
 
   <div id="projects">
-    <section>
-    <h3><span style="color: blue" >PROJECTS</span></h3>
+    <section class="appContainer">
+    <h3>PROJECTS</h3>
       <div class="img-container quizAppImg">
           <img src="quizAppHome.png" alt="Quiz App Home Page">
       </div>
@@ -78,9 +78,17 @@
           colors with notable music legends Jimi Hendrix and Eric Clapton. The fonts are large and easy to 
           read in contrast to the colorful background. The idea for this app is to keep it simple and make 
           the controls as user friendly as possible</p><div class="links"><a target="_blank" 
-            href="https://github.com/traviswhittington88/Quiz-App"><img src="GitHub_Logo.png"class="github"> </a>
-          <a class="linkcolorB" target="_blank" href="https://traviswhittington88.github.io/Quiz-App/"> &nbsp;| Live Page</a></div>
-        <br><br>
+            href="https://github.com/traviswhittington88/Quiz-App"><img src="GitHub_Logo.png" class="github" alt="github logo"> </a>
+          <a target="_blank" href="https://traviswhittington88.github.io/Quiz-App/"> &nbsp;| Live Page</a></div>
+        
+        <div class="techContainer"> 
+           <div class ="techWrapper">
+            <i class="fab fa-html5 fa-lg"></i>
+            <i class="fab fa-js-square fa-lg"></i>
+            <i class="fab fa-css3-alt fa-lg"></i>
+          </div>
+        </div> <br><br>
+
       <div class="img-container tasteFinderImg">
         <img src="TasteFinderHome.png" alt="TasteFinder Home Page">
       </div>
@@ -91,39 +99,41 @@
           on the eyes. The ice-cream cone logo is 100% original and was designed by my uncle Daniel Packard, who is an 
           amazing artist. He really brought the application together with this final touch.</p>
 
-          The UX if simple and relies on you to click a search tab: anything, books, authors, movies, music. 
+        <p>The UX if simple and relies on you to click a search tab: anything, books, authors, movies, music. 
           From there, you type any string related to the tab selected above e.g. music/Pink Floyd, and 
           click recommmend. Taste Finder currently recommends a single media type in response and 
           produces 3 related videos from Youtube, but this is not set in stone. I will continue 
           to change the application based on user requests because I believe a good application 
           is one that is flexible.</p>
           <div class="links"><a target="_blank"
-          href="https://github.com/traviswhittington88/tastefinder"><img src="GitHub_Logo.png" class="github"> </a>
-        <a class="linkcolorB" target="_blank" href="https://traviswhittington88.github.io/tastefinder/">&nbsp;| Live Page</a></div><br><br>
+          href="https://github.com/traviswhittington88/tastefinder"><img src="GitHub_Logo.png" class="github" alt="github logo"> </a>
+        <a target="_blank" href="https://traviswhittington88.github.io/tastefinder/">&nbsp;| Live Page</a></div>
+        
+        <div class="techContainer"> 
+            <div class ="techWrapper">
+             <i class="fab fa-html5 fa-lg"></i>
+             <i class="fab fa-js-square fa-lg"></i>
+             <i class="fab fa-css3-alt fa-lg"></i>
+           </div>
+         </div>
+         <br><br>
+
       </section>
     </div>
-    <div class="techContainer">
-      <h3>TECHNOLOGIES</h3> 
-     <div class ="techWrapper">
-      <a href="http://www.w3.org/html/logo/">
-        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" 
-        alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
-      </a>
-      <i class="fab fa-js fa-5x"></i></div>
-    </div>
+    
 </div>
     
 </main>
 <br><br>
-<div class="footer" id="contact">
+<div class="footer">
     <footer id="contact">
       <address>
         <div class="links">
-          <a href="mailto:traviswhittington@ymail.com">Email&nbsp;&nbsp;|&nbsp;&nbsp;</a> 
-          <a href="https://github.com/traviswhittington88"><img src="GitHub_Logo.png" class="github"></a>
-          <a href="https://www.linkedin.com/in/travis-whittington-83b96ba8/" id="linkedin">&nbsp;&nbsp;|&nbsp;&nbsp;Linkedin</a>
+          <a target="_blank" href="mailto:traviswhittington@ymail.com">Email&nbsp;&nbsp;|&nbsp;&nbsp;</a> 
+          <a target="_blank" href="https://github.com/traviswhittington88"><img src="GitHub_Logo.png" class="github" alt="github logo"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/travis-whittington-83b96ba8/" id="linkedin">&nbsp;&nbsp;|&nbsp;&nbsp;Linkedin</a>
       </div>
-      <address>
+    </address>
     </footer>
   </div>
   <script
