@@ -2,22 +2,24 @@
 <html lang="en">
    <head>
       <title>My Portfolio</title>
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" type="text/css" href="main.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://kit.fontawesome.com/b70fed9712.js"></script>
    </head>
-   <body>
-      <header id="home">
+   <body id="home">
+      <header class="header">
          <div class="container">
-            <h1 class="logo">MyPortfolio</h1>
+            <h1 class="logo">My Portfolio</h1>
             <nav class="site-nav">
                <ul>
-                  <li><a href="#home" class="link" data-page="home"><i class="fa fa-home"></i>Home</a></li>
-                  <li><a href="#bio" class="link" data-page="bio"><i class="fa fa-info"></i>Bio</a></li>
+                  <li><a href="#home" class="nav-link" data-page="home"><i class="fa fa-home"></i>Home</a></li>
+                  <li><a href="#bio" class="nav-link" data-page="bio"><i class="fa fa-info"></i>Bio</a></li>
                   <li><a href="https://travsblg.blogspot.com/" target="_blank" data-page="blog"><i class="fa fa-pencil"></i>Blog</a></li>
-                  <li><a href="#projects" class="link" data-page="projects"><i class="fa fa-briefcase"></i>Projects</a></li>
-                  <li><a href="#contact" class="link" data-page="contact"><i class="fa fa-envelope"></i>Contact</a></li>
+                  <li><a href="#projects" class="nav-link" data-page="projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+                  <li><a href="#contact" class="nav-link" data-page="contact"><i class="fa fa-envelope"></i>Contact</a></li>
                </ul>
             </nav>
             <div class="menu-toggle">
@@ -36,6 +38,11 @@
                   imgs/hero_1000.jpeg 1000w,
                   imgs/hero_1500.jpeg 1500w,
                   imgs/hero_1920.jpeg 1920w"
+                  sizes="(max-width: 640px) 620px,
+                         (max-width: 720px) 680px,
+                         (max-width: 1000px) 960px,
+                         (max-width: 1500px) 1460px,
+                         1880px"
                   alt= "various hero images at different pixel widths for increased clarity">
             </div>
             <div class="headline">
@@ -47,7 +54,7 @@
             <div id="bio">
                <section>
                   <h2>BIO</h2>
-                  <p> I am a web developer and recent graduate of Thinkful’s Full Stack Web Development program.  To say I love coding
+                  <p>I am a web developer and recent graduate of Thinkful’s Full Stack Web Development program.  To say I love coding
                      is an understatement.<em> I have a drive and passion that are unmatched when it comes to solving problems 
                      through logic and technology.</em> I developed this passion early on in my military career as a Pashto
                      linguist where I thrived interpreting the official language of
@@ -76,13 +83,12 @@
                <section class="appContainer">
                   <h2>PROJECTS</h2>
                   <div class="img-container quizAppImg">
-                     <img src="imgs/rockimg500.png" 
-                        srcset="imgs/rockimg500.png 500w, 
-                        imgs/rockimg640.png 640w, 
-                        imgs/rockimg720.png 720w,
-                        imgs/rockimg1000.png 1000w,
-                        imgs/rockimg1500.png 1500w,
-                        imgs/rockimg1920.png 1920w"
+                     <img src="imgs/quizApp-480w.png"
+                        srcset="imgs/quizApp-480w.png 480w,
+                        imgs/quizApp-800w.png 800w"
+                        sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px"
                         alt="Rock N' Roll Quizz Application homepage screenshot">
                   </div>
                   <h3>Rock N' Roll Quiz App</h3>
@@ -105,21 +111,23 @@
                      </div>
                   </div>
                   <div class="img-container tasteFinderImg">
-                     <img src="imgs/tasteFinderHome_500px.png" 
-                        srcset="imgs/tasteFinderHome_500px.png 300w,
-                        imgs/tasteFinderHome_1000px.png 1000w, 
-                        imgs/tasteFinderHome_1490px.png 1490w,
-                        imgs/tasteFinderHome_1920px.png 1920w"
+                     <img src="imgs/tasteFinder-320w.png" 
+                        srcset= "imgs/tasteFinder-320w.png 320w,
+                        imgs/tasteFinder-480w.png 480w,
+                        imgs/tasteFinder-800w.png 800w"
+                        sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px"
                         alt="TasteFinder homepage screenshot">
                   </div>
                   <h3>TasteFinder</h3>
-                  <p>Taste Finder is a fun and useful application that integrates the Tastedive and Youtube APIs to present 
+                  <p>   Taste Finder is a fun and useful application that integrates the Tastedive and Youtube APIs to present 
                      recommendation information in a new and exciting way. The dark grey background was chosen intentionally to 
                      highlight the more eye-popping art and colorfol neons that appear on the page, without being two overwhelming 
                      on the eyes. The ice-cream cone logo is 100% original and was designed by my uncle Daniel Packard, who is an 
                      amazing artist. He really brought the application together with this final touch.
                   </p>
-                  <p>The UX if simple and relies on you to click a search tab: anything, books, authors, movies, music. 
+                  <p>   The UX if simple and relies on you to click a search tab: anything, books, authors, movies, music. 
                      From there, you type any string related to the tab selected above e.g. music/Pink Floyd, and 
                      click recommmend. Taste Finder currently recommends a single media type in response and 
                      produces 3 related videos from Youtube, but this is not set in stone. I will continue 
