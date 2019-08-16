@@ -1,7 +1,7 @@
 $('.menu-toggle, .nav-link').click(function(event) {
   console.log('click!');
   $('.site-nav').toggleClass('site-nav--open',500);
-  $(this).toggleClass('open');
+  $('.menu-toggle').toggleClass('open');
 });
 
 $(".nav-link").click(function(){
