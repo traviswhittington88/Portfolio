@@ -1,169 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>My Portfolio</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" type="text/css" href="main.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="https://kit.fontawesome.com/b70fed9712.js"></script>
-   </head>
-   <body id="home">
-      <header class="header">
-         <div class="container">
-            <h1 class="logo">My Portfolio</h1>
-            <nav class="site-nav">
-               <ul>
-                  <li><a href="#home" class="nav-link" data-page="home"><i class="fa fa-home"></i>Home</a></li>
-                  <li><a href="#bio" class="nav-link" data-page="bio"><i class="fa fa-info"></i>Bio</a></li>
-                  <li><a href="https://travsblg.blogspot.com/" target="_blank" data-page="blog"><i class="fa fa-pencil"></i>Blog</a></li>
-                  <li><a href="#projects" class="nav-link" data-page="projects"><i class="fa fa-briefcase"></i>Projects</a></li>
-                  <li><a href="#contact" class="nav-link" data-page="contact"><i class="fa fa-envelope"></i>Contact</a></li>
-               </ul>
-            </nav>
-            <div class="menu-toggle">
-               <div class="hamburger"></div>
-            </div>
-         </div>
-      </header>
-      <main>
-         <h1>Hi, my name is Travis Whittington!</h1>
-         <div class="wrapper">
-            <div class=" img-container hero-img--container">
-               <img src="/imgs/hero_340.jpeg"
-                  srcset="imgs/hero_500.jpeg 500w,
-                  imgs/hero_640.jpeg 640w, 
-                  imgs/hero_720.jpeg 720w, 
-                  imgs/hero_1000.jpeg 1000w,
-                  imgs/hero_1500.jpeg 1500w,
-                  imgs/hero_1920.jpeg 1920w"
-                  sizes="(max-width: 640px) 620px,
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/b70fed9712.js"></script>
+  </head>
+  <body id="home">
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">My Portfolio</h1>
+        <nav class="site-nav">
+          <ul>
+            <li>
+              <a href="#home" class="nav-link" data-page="home"
+                ><i class="fa fa-home"></i>Home</a
+              >
+            </li>
+            <li>
+              <a href="#bio" class="nav-link" data-page="bio"
+                ><i class="fa fa-info"></i>Bio</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://travsblg.blogspot.com/"
+                target="_blank"
+                data-page="blog"
+                ><i class="fa fa-pencil"></i>Blog</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="nav-link" data-page="projects"
+                ><i class="fa fa-briefcase"></i>Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link" data-page="contact"
+                ><i class="fa fa-envelope"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="heroContainer">
+        <h1 class="name">Hi, my name is Travis!</h1>
+        <div class=" img-container hero-img--container">
+          <img
+            src="/imgs/hero_340.jpeg"
+            srcset="
+              imgs/hero_500.jpeg   500w,
+              imgs/hero_1000.jpeg 1000w,
+              imgs/hero_1920.jpeg 1920w
+            "
+            sizes="(max-width: 640px) 620px,
                          (max-width: 720px) 680px,
                          (max-width: 1000px) 960px,
                          (max-width: 1500px) 1460px,
                          1880px"
-                  alt= "various hero images at different pixel widths for increased clarity">
-            </div>
-            <div class="headline">
-               <p>I’m a <span class="teal">creative</span> and 
-                  <span class="coral">passionate </span>full stack developer with an enthusiasm for
-                  using code to better the lives of everyone around me! 
-               </p>
-            </div>
-            <div id="bio">
-               <section>
-                  <h2>BIO</h2>
-                  <p>I am a web developer and recent graduate of Thinkful’s Full Stack Web Development program.  To say I love coding
-                     is an understatement.<em> I have a drive and passion that are unmatched when it comes to solving problems 
-                     through logic and technology.</em> I developed this passion early on in my military career as a Pashto
-                     linguist where I thrived interpreting the official language of
-                     Afghanistan. It only makes sense that I would find the field of full stack development so satisfying and rewarding. 
-                     Not only that, I love people and building solutions to those human problems that occassionaly crop up, especially
-                     using communication as a tool to strengthem teams and friendship. As a developer and keen listener, 
-                     <em>the idea of transforming problems into solutions is a process that truly resonates with me.</em>
-                  </p>
-                  <p> My life outside of coding is also extremely fulfilling. When I’m not at my desk, I’m usually chasing my 3 
-                     children around! I have a very supportive wife who has supported me through this journey and it would be difficult 
-                     to say she hasn’t been a large part of my success.  Being a young father doesn’t guarantee a lot of free time. 
-                     However, if there is a spare moment I will be playing guitar, writing music, reading books, or trying to increase 
-                     my knowledge about the world around me. <em>To put it simply, I love to 
-                     learn!</em>
-                  </p>
-                  <p><em>  My favorite aspect of full-stack development is using Javascript and its various frameworks to create the 
-                     actual functionality behind each project or application.</em>  Sure, I enjoy styling and semantic HTML like the 
-                     rest of them, but when it comes to truly realizing the intent of a design, Javascript can be super fun! With that 
-                     said, I also dedicate a lot of thought into styling my apps and making them look just right. I will spend hours of
-                     personal time altering fonts or layouts and then experimenting by showing potential users the various designs and 
-                     gathering their feedback and opinions.
-                  </p>
-               </section>
-            </div>
-            <div id="projects">
-               <section class="appContainer">
-                  <h2>PROJECTS</h2>
-                  <div class="img-container quizAppImg">
-                     <img src="imgs/quizApp-480w.png"
-                        srcset="imgs/quizApp-480w.png 480w,
-                        imgs/quizApp-800w.png 800w"
-                        sizes="(max-width: 320px) 280px,
-                        (max-width: 480px) 440px,
-                        800px"
-                        alt="Rock N' Roll Quizz Application homepage screenshot">
-                  </div>
-                  <h3>Rock N' Roll Quiz App</h3>
-                  <p> This application presents the user with 10 rock trivia questions. It provides feedback for each 
-                     question (right or wrong), increments the question number and score accordingly, and then displays 
-                     the overall results. The visual design of the application is based around bright, eye-catching 
-                     colors with notable music legends Jimi Hendrix and Eric Clapton. The fonts are large and easy to 
-                     read in contrast to the colorful background. The idea for this app is to keep it simple and make 
-                     the controls as user friendly as possible
-                  </p>
-                  <div class="links"><a target="_blank" 
-                     href="https://github.com/traviswhittington88/Quiz-App"><img src="imgs/GitHub_Logo.png" class="github" alt="github logo"> </a>
-                     <a target="_blank" href="https://traviswhittington88.github.io/Quiz-App/"> &nbsp;| Live Page</a>
-                  </div>
-                  <div class="techContainer">
-                     <div class ="techWrapper">
-                        <i class="fab fa-html5 fa-lg"></i>
-                        <i class="fab fa-js-square fa-lg"></i>
-                        <i class="fab fa-css3-alt fa-lg"></i>
-                     </div>
-                  </div>
-                  <div class="img-container tasteFinderImg">
-                     <img src="imgs/tasteFinder-320w.png" 
-                        srcset= "imgs/tasteFinder-320w.png 320w,
-                        imgs/tasteFinder-480w.png 480w,
-                        imgs/tasteFinder-800w.png 800w"
-                        sizes="(max-width: 320px) 280px,
-                        (max-width: 480px) 440px,
-                        800px"
-                        alt="TasteFinder homepage screenshot">
-                  </div>
-                  <h3>TasteFinder</h3>
-                  <p>   Taste Finder is a fun and useful application that integrates the Tastedive and Youtube APIs to present 
-                     recommendation information in a new and exciting way. The dark grey background was chosen intentionally to 
-                     highlight the more eye-popping art and colorfol neons that appear on the page, without being two overwhelming 
-                     on the eyes. The ice-cream cone logo is 100% original and was designed by my uncle Daniel Packard, who is an 
-                     amazing artist. He really brought the application together with this final touch.
-                  </p>
-                  <p>   The UX if simple and relies on you to click a search tab: anything, books, authors, movies, music. 
-                     From there, you type any string related to the tab selected above e.g. music/Pink Floyd, and 
-                     click recommmend. Taste Finder currently recommends a single media type in response and 
-                     produces 3 related videos from Youtube, but this is not set in stone. I will continue 
-                     to change the application based on user requests because I believe a good application 
-                     is one that is flexible.
-                  </p>
-                  <div class="links"><a target="_blank"
-                     href="https://github.com/traviswhittington88/tastefinder"><img src="imgs/GitHub_Logo.png" class="github" alt="github logo"> </a>
-                     <a target="_blank" href="https://traviswhittington88.github.io/tastefinder/">&nbsp;| Live Page</a>
-                  </div>
-                  <div class="techContainer">
-                     <div class ="techWrapper">
-                        <i class="fab fa-html5 fa-lg"></i>
-                        <i class="fab fa-js-square fa-lg"></i>
-                        <i class="fab fa-css3-alt fa-lg"></i>
-                     </div>
-                  </div>
-               </section>
-            </div>
-         </div>
-      </main>
-      <div class="footer">
-         <footer id="contact">
-            <address>
-               <div class="links">
-                  <a target="_blank" href="mailto:traviswhittington@ymail.com">Email&nbsp;&nbsp;|&nbsp;&nbsp;</a> 
-                  <a target="_blank" href="https://github.com/traviswhittington88"><img src="imgs/GitHub_Logo.png" class="github" alt="github logo"></a>
-                  <a target="_blank" href="https://www.linkedin.com/in/travis-whittington-83b96ba8/" id="linkedin">&nbsp;&nbsp;|&nbsp;&nbsp;Linkedin</a>
-               </div>
-            </address>
-         </footer>
+            alt="various hero images at different pixel widths for increased clarity"
+          />
+        </div>
+          <p class="headline">
+            I’m a <span class="teal">creative</span> and
+            <span class="coral">passionate </span>full stack developer with an
+            enthusiasm for using code to better the lives of everyone around me!
+          </p>
       </div>
-      <script
-         src="https://code.jquery.com/jquery-3.4.1.js"
-         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-         crossorigin="anonymous"></script>
-      <script src="index.js"></script>
-   </body>
+
+          <section id="bio">
+            <h2 class="heading">BIO</h2>
+            <p>
+              I am a web developer and recent graduate of Thinkful’s Full Stack
+              Web Development program. To say I love coding is an
+              understatement.<em>
+                I have a drive and passion that are unmatched when it comes to
+                solving problems through logic and technology.</em
+              >
+              I developed this passion early on in my military career as a
+              Pashto linguist in the United States Airforce.
+              <em
+                >The idea of transforming problems into solutions is a process
+                that truly resonates with me.</em
+              >
+            </p>
+            <p>
+              <em>
+                My favorite aspect of full-stack development is using Javascript
+                and its various frameworks to create the actual functionality
+                behind each project or application.</em
+              >
+              With that said, I also dedicate a lot of thought into styling my
+              apps and making them look just right. I will spend hours of
+              personal time altering fonts or layouts and then experimenting by
+              showing potential users the various designs and gathering their
+              feedback and opinions.
+            </p>
+          </section>
+        <div id="projects">
+          <section class="appContainer">
+            <h2 class="heading">PROJECTS</h2>
+            <div class="quizzAppContainer">
+              <div class="img-container quizAppImg">
+                <img
+                  src="imgs/quizApp-480w.png"
+                  srcset="
+                    imgs/quizApp-480w.png 480w,
+                    imgs/quizApp-800w.png 800w
+                  "
+                  sizes="(max-width: 320px) 280px,
+                          (max-width: 480px) 440px,
+                          800px"
+                  alt="Rock N' Roll Quizz Application homepage screenshot"
+                />
+              </div>
+              <h3>Rock N' Roll Quiz App</h3>
+              <p>
+                This application presents the user with 10 rock trivia
+                questions. It provides feedback for each question (right or
+                wrong), increments the question number and score accordingly,
+                and then displays the overall results. The visual design of the
+                application is based around bright, eye-catching colors with
+                notable music legends Jimi Hendrix and Eric Clapton. The fonts
+                are large and easy to read in contrast to the colorful
+                background. The idea for this app is to keep it simple and make
+                the controls as user friendly as possible
+              </p>
+              <div class="links">
+                <a
+                  target="_blank"
+                  href="https://github.com/traviswhittington88/Quiz-App"
+                  ><img
+                    src="imgs/GitHub_Logo.png"
+                    class="github"
+                    alt="github logo"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://traviswhittington88.github.io/Quiz-App/"
+                >
+                  &nbsp;| Live Page</a
+                >
+              </div>
+              <div class="techContainer">
+                <div class="techWrapper">
+                  <i class="fab fa-html5 fa-lg"></i>
+                  <i class="fab fa-js-square fa-lg"></i>
+                  <i class="fab fa-css3-alt fa-lg"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="img-container tasteFinderImg">
+              <img
+                src="imgs/tasteFinder-320w.png"
+                srcset="
+                  imgs/tasteFinder-320w.png 320w,
+                  imgs/tasteFinder-480w.png 480w,
+                  imgs/tasteFinder-800w.png 800w
+                "
+                sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px"
+                alt="TasteFinder homepage screenshot"
+              />
+            </div>
+            <h3>TasteFinder</h3>
+            <p>
+              Taste Finder is a fun and useful application that integrates the
+              Tastedive and Youtube APIs to present recommendation information
+              in a new and exciting way. The dark grey background was chosen
+              intentionally to highlight the more eye-popping art and colorfol
+              neons that appear on the page, without being two overwhelming on
+              the eyes. The ice-cream cone logo is 100% original and was
+              designed by my uncle Daniel Packard, who is an amazing artist. He
+              really brought the application together with this final touch.
+            </p>
+            <p>
+              The UX if simple and relies on you to click a search tab:
+              anything, books, authors, movies, music. From there, you type any
+              string related to the tab selected above e.g. music/Pink Floyd,
+              and click recommmend. Taste Finder currently recommends a single
+              media type in response and produces 3 related videos from Youtube,
+              but this is not set in stone. I will continue to change the
+              application based on user requests because I believe a good
+              application is one that is flexible.
+            </p>
+            <div class="links">
+              <a
+                target="_blank"
+                href="https://github.com/traviswhittington88/tastefinder"
+                ><img
+                  src="imgs/GitHub_Logo.png"
+                  class="github"
+                  alt="github logo"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://traviswhittington88.github.io/tastefinder/"
+                >&nbsp;| Live Page</a
+              >
+            </div>
+            <div class="techContainer">
+              <div class="techWrapper">
+                <i class="fab fa-html5 fa-lg"></i>
+                <i class="fab fa-js-square fa-lg"></i>
+                <i class="fab fa-css3-alt fa-lg"></i>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      <footer id="contact">
+        <address>
+          <div class="links">
+            <a target="_blank" href="mailto:traviswhittington@ymail.com"
+              >Email&nbsp;&nbsp;|&nbsp;&nbsp;</a
+            >
+            <a target="_blank" href="https://github.com/traviswhittington88"
+              ><img src="imgs/GitHub_Logo.png" class="github" alt="github logo"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/travis-whittington-83b96ba8/"
+              id="linkedin"
+              >&nbsp;&nbsp;|&nbsp;&nbsp;Linkedin</a
+            >
+          </div>
+        </address>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
