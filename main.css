@@ -57,6 +57,10 @@ p + p {
   margin-top: 10px;
 }
 
+.link {
+  vertical-align: middle;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
