@@ -1,0 +1,17 @@
+{
+  "name": "travis-portfolio",
+  "version": "1.0.0",
+  "description": "My developer portfolio",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traviswhittington88/Portfolio.git"
+  },
+  "author": "Travis Whittington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/traviswhittington88/Portfolio/issues"
+  },
+  "homepage": "https://github.com/traviswhittington88/Portfolio#readme"
+}
